@@ -6,9 +6,9 @@ import argparse
 parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter,
                                  description=''' 
                                  
-                Fish-miner: Short module for getting insigths from FishBase database 
-                ===================================================================
-                ><{{{*> . ><(((*> . ><{{{*> . ><(((*> . ><{{{*> . ><(((*> . ><{{{*>
+                Fish-Scraping: Short module for getting insigths from FishBase database 
+                =======================================================================
+                ><{{{*> . ><(((*> . ><{{{*> . ><(((*> . ><{{{*> . ><(((*> . ><{{{*> . >
                                     
                                    * Written by U. Rosas
                                    
