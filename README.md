@@ -1,3 +1,3 @@
-# Fish-Scraping
+# FishScraping
 
 **Under development yet**
