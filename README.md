@@ -12,7 +12,7 @@ Software requierements:
 * Git
 
 
-### Synomyms
+
 
 ### Length-Weight relationships
 
@@ -27,3 +27,6 @@ Engraulis ringens
 Menticirrhus undulatus
 Sciaena deliciosa
 ```
+### Synomyms
+
+### Check list per country
