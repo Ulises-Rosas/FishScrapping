@@ -27,6 +27,8 @@ Engraulis ringens
 Menticirrhus undulatus
 Sciaena deliciosa
 ```
-### Synomyms
+We can obtain their LWRs by using:
 
-### Check list per country
+```Shell
+python3 fishbase.py species.txt -lw -out species_lw.tsv
+```
