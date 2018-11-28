@@ -30,5 +30,5 @@ Sciaena deliciosa
 We can obtain their LWRs by using:
 
 ```Shell
-python3 fishbase.py species.txt -lw -out species_lw.tsv
+python3 ./src/fishbase.py species.txt -lw -out species_lw.tsv
 ```
