@@ -1,4 +1,4 @@
-# FishScraping
+# FishScrapping
 
 **Warning**: Under development yet
 
