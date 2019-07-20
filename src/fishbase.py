@@ -29,6 +29,10 @@ def getOpt():
                         action='store_true',
                         help='Get Length-Weight relationships'
                         )
+    parser.add_argument('-syn',
+                        action='store_true',
+                        help='Get species synonyms'
+                        )
     parser.add_argument('-out', metavar="str",
                         action='store',
                         default='input_based',
@@ -344,12 +348,12 @@ class Fishbase:
                 return g
 
 
-def cname(s):
+def cname(s, ty):
     """
     :param s: check line 138 of `plot_bars.R`
     :return:
     """
-    tail = "_fishbase.tsv"
+    tail = "_fishbase_%s.tsv" % ty
     try:
         return s.split(".")[-2].split("/")[-1] + tail
     except IndexError:
@@ -363,15 +367,16 @@ def main():
     file        = open( options['spps'], 'r' ).read().split("\n")
     all_species = [i.replace('\n', '') for i in filter(None, file)]
 
+
     if options['lw']:
 
-        fo = options['out'] if options['out'] != 'input_based' else cname(options['spps'])
+        fo = options['out'] + '_lw.tsv' if options['out'] != 'input_based' else cname(options['spps'], 'lw')
         # print("\nWriting results into: " + fo + "\n")
 
         f = open(fo, "w")
         line = 1
 
-        print("Scrapping data of:\n")
+        print("\nScrapping data of:\n")
         for i in all_species:
 
             if line == 1:
@@ -383,6 +388,33 @@ def main():
             string = Fishbase(i).lw_relationship()
 
             f.write(string + "\n" )
+        f.close()
+
+    if options['syn']:
+
+        fo = options['out'] + '_syn.tsv' if options['out'] != 'input_based' else cname(options['spps'], 'syn')
+
+        f = open(fo, "w")
+        line = 1
+
+        print("\nScrapping data of:\n")
+
+        for i in all_species:
+
+            if line == 1:
+                f.write("species\tsynonyms" + "\n")
+                line += 1
+
+            print("%30s" % i)
+            string = Fishbase(i).get_synonyms()
+
+            if not string:
+                string = ["NA"]
+
+            stringCol = ', '.join(string)
+
+            f.write("%s\t%s" % (i, stringCol) + "\n" )
+
         f.close()
 
 if __name__ == '__main__':
