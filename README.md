@@ -28,10 +28,10 @@ We can obtain their LWRs by using:
 ./src/fishbase.py species.txt -lw
 ```
 
-While output file name is based on input and on above example this file is named `species_fishbase.tsv`, option `-out` can also modify default names. 
+While output file name is based on input and on above example this file is named `species_fishbase_lw.tsv`, option `-out` can also modify default names. 
 
 ```Shell
-cat species_fishbase.tsv
+cat species_fishbase_lw.tsv
 ```
 ```
 species	a	b	n	Country	RangeLength
@@ -44,4 +44,24 @@ Engraulis ringens	0.00375	3.221	NA	Chile	NA
 Menticirrhus undulatus	0.01027	3.000	1	NA	61.0, 61.0
 Sciaena deliciosa	NA	NA	NA	NA	NA
 ```
+### Synonyms
+We can also extract species synonyms according to this database with the option `-syn`:
+
+```Shell
+./src/fishbase.py species.txt -syn
+```
+
+Again, by default `fishbase.py` uses its input to name its output, however this can be modified with `-out` option.
+
+```Shell
+cat species_fishbase_syn.tsv
+```
+```
+species	synonyms
+Odontesthes regia	Atherina regia, Austromenidia regia, Atherina laticlavia, Austromenidia laticlava, Chirostoma affine, Basilichthys regillus, Cauque regillus, Odontesthes regillus, Basilichthys jordani, Basilichthys octavius, Odontesthes regia
+Engraulis ringens	Engraulis pulchellus, Engraulis tapirulus, Anchoviella tapirulus, Stolephorus tapirulus, Engraulis ringens
+Menticirrhus undulatus	Umbrina undulata, Menticirrhus undulatus
+Sciaena deliciosa	Corvina deliciosa, Sciaena deliciosa
+```
+
 
