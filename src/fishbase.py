@@ -1,35 +1,43 @@
+#!/usr/bin/env python3
+
+# -*- coding: utf-8 -*- #
+
 import re
 import urllib.request
 import argparse
 
 
-parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter,
-                                 description=''' 
-                                 
-                Fish-Scraping: Short module for getting insigths from FishBase database 
-                =======================================================================
-                ><{{{*> . ><(((*> . ><{{{*> . ><(((*> . ><{{{*> . ><(((*> . ><{{{*> . >
-                                    
-                                   * Written by U. Rosas
-                                   
-                                   
-                      
-                                ''', epilog="* Warning: Scripts here run as fast as FishBase server allow us")
+def getOpt():
+    parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter,
+                                     description=''' 
 
-parser.add_argument('spps', metavar='SpeciesList',
-                    type=argparse.FileType('r'),
-                    help='Target species in plain text')
-parser.add_argument('-lw',
-                    action='store_true',
-                    help='Get Length-Weight relationships'
-                    )
-parser.add_argument('-out', metavar="--output-name",
-                    action='store',
-                    help='File name of results'
-                    )
-args = parser.parse_args()
+                    Fish-Scraping: Short module for getting insigths from FishBase database 
+                    =======================================================================
+                    ><{{{*> . ><(((*> . ><{{{*> . ><(((*> . ><{{{*> . ><(((*> . ><{{{*> . >
 
-all_species = [i.replace('\n', '') for i in args.spps]
+                                       * Written by U. Rosas
+
+
+
+                                    ''', epilog="* Warning: Scripts here run as fast as FishBase server allow us")
+
+    parser.add_argument('spps',
+                        metavar='spps_file',
+                        default=None,
+                        help='Target species in plain text')
+    parser.add_argument('-lw',
+                        action='store_true',
+                        help='Get Length-Weight relationships'
+                        )
+    parser.add_argument('-out', metavar="str",
+                        action='store',
+                        default='input_based',
+                        help='Output name [Default = <input_based>.tsv]'
+                        )
+    args = parser.parse_args()
+
+    return args
+
 
 class Fishbase:
     """
@@ -57,11 +65,11 @@ class Fishbase:
 
 
         ## useful urls:
-        self.summary_url = "https://www.fishbase.de/summary/"
-        self.no_record_url = "https://www.fishbase.de/Nomenclature/ScientificNameSearchList.php?Genus="
+        self.summary_url = "https://www.fishbase.in/summary/"
+        self.no_record_url = "https://www.fishbase.in/Nomenclature/ScientificNameSearchList.php?Genus="
         self.api_url = "https://fishbase.ropensci.org/"
-        self.synonym_url = "http://www.fishbase.se/Nomenclature/SynonymsList.php?ID="
-        self.lw_relationship_url = "https://www.fishbase.de/popdyn/LWRelationshipList.php?ID="
+        self.synonym_url = "http://www.fishbase.in/Nomenclature/SynonymsList.php?ID="
+        self.lw_relationship_url = "https://www.fishbase.in/popdyn/LWRelationshipList.php?ID="
 
 
         ## messages
@@ -165,6 +173,8 @@ class Fishbase:
         to validate whether it really exists
         complete_url = 'https://www.fishbase.de/summary/Sarda-chilnss.html'
         """
+        # self = Fishbase("Odontesthes regia")._get_id()
+
         if len(self.tmp_selected_choice) == 0:
 
             complete_url = self.summary_url + self.species.replace(" ", "-") + ".html"
@@ -333,21 +343,47 @@ class Fishbase:
                 g+="{0}\t{1}\t{2}\t{3}\t{4}\t{5}".format(self.species, a[-1], b[-1], n[-1], country[-1], length[-1])
                 return g
 
-if args.lw:
-    print("\nWriting results into: " + str(args.out)+ "\n")
 
-    f = open(str(args.out), "w")
-    for i in all_species:
-
-        print("Accessing to " + i + " in FishBase...")
-        string = Fishbase(i).lw_relationship()
-
-        f.write(
-            string + "\n"
-        )
-    f.close()
-    print("\n DONE!\n")
-    print("\tColumn names are: species\ta\tb\tn\tCountry\tRangeLength\n")
+def cname(s):
+    """
+    :param s: check line 138 of `plot_bars.R`
+    :return:
+    """
+    tail = "_fishbase.tsv"
+    try:
+        return s.split(".")[-2].split("/")[-1] + tail
+    except IndexError:
+        return s.split("/")[-1] + tail
 
 
+def main():
+    options = vars(getOpt())
+    # print(options)
 
+    file        = open( options['spps'], 'r' ).read().split("\n")
+    all_species = [i.replace('\n', '') for i in filter(None, file)]
+
+    if options['lw']:
+
+        fo = options['out'] if options['out'] != 'input_based' else cname(options['spps'])
+        # print("\nWriting results into: " + fo + "\n")
+
+        f = open(fo, "w")
+        line = 1
+
+        print("Scrapping data of:\n")
+        for i in all_species:
+
+            if line == 1:
+                f.write("species\ta\tb\tn\tCountry\tRangeLength" + "\n")
+                line += 1
+
+            print("%30s" % i)
+
+            string = Fishbase(i).lw_relationship()
+
+            f.write(string + "\n" )
+        f.close()
+
+if __name__ == '__main__':
+    main()
