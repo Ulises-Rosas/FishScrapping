@@ -9,9 +9,6 @@ Features:
 
 Software requierements:
 * Python 3
-* Git
-
-
 
 
 ### Length-Weight relationships
