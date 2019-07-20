@@ -1,7 +1,5 @@
 # FishScrapping
 
-**Warning**: Under development yet
-
 Features:
 
 - [x] get up-to-date information from FishBase database
