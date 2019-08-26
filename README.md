@@ -8,6 +8,19 @@ Features:
 Software requierements:
 * Python 3
 
+#### Installation
+
+Upon downloading this repository, unzip it and move into the `FishScrapping` directory. Then you can run the following to install executables:
+```Shell
+python3 setup.py install
+```
+
+Using `git`:
+```Shell
+git clone https://github.com/Ulises-Rosas/FishScrapping.git
+cd FishScrapping
+python3 setup.py install
+```
 
 ### Length-Weight relationships
 
@@ -25,7 +38,7 @@ Sciaena deliciosa
 We can obtain their LWRs by using:
 
 ```Shell
-./src/fishbase.py species.txt -lw
+fishbase.py species.txt -lw
 ```
 
 While output file name is based on input and on above example this file is named `species_fishbase_lw.tsv`, option `-out` can also modify default names. 
@@ -48,7 +61,7 @@ Sciaena deliciosa	NA	NA	NA	NA	NA
 We can also extract species synonyms according to this database with the option `-syn`:
 
 ```Shell
-./src/fishbase.py species.txt -syn
+fishbase.py species.txt -syn
 ```
 
 Again, by default `fishbase.py` uses its input to name its output, however this can be modified with `-out` option.
