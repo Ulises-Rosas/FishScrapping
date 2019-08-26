@@ -10,12 +10,12 @@ Software requierements:
 
 #### Installation
 
-Upon downloading this repository, unzip it and move into the `FishScrapping` directory. Then you can run the following to install executables:
+Upon downloading this repository, unzip it and move into the `FishScrapping` directory. Then you can run the following line to install executables:
 ```Shell
 python3 setup.py install
 ```
 
-Using `git`:
+Using `git` (optional):
 ```Shell
 git clone https://github.com/Ulises-Rosas/FishScrapping.git
 cd FishScrapping
