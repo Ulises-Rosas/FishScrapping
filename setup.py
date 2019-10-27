@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import setuptools
 from distutils.core import setup
 
 setup(name="FishScrapping",
