@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/148187014.svg)](https://zenodo.org/badge/latestdoi/148187014)
+
 # FishScrapping
 
 Features:
