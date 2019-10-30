@@ -18,6 +18,13 @@ Using `pip`
 pip install FishScrapping
 ```
 
+Using `git` (Optional):
+```Shell
+git clone https://github.com/Ulises-Rosas/FishScrapping.git
+cd FishScrapping
+python3 setup.py install
+```
+
 ### Length-Weight relationships
 
 Let's suppose we have the following a list of species stored at [species.txt](https://github.com/Ulises-Rosas/FishScrapping/blob/master/species.txt):
