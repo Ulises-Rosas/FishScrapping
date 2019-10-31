@@ -1,4 +1,6 @@
 [![DOI](https://zenodo.org/badge/148187014.svg)](https://zenodo.org/badge/latestdoi/148187014)
+[![pypi](https://img.shields.io/pypi/v/FishScrapping.svg)](https://pypi.python.org/pypi/FishScrapping)
+[![python](https://img.shields.io/pypi/pyversions/FishScrapping.svg)](https://pypi.python.org/pypi/FishScrapping)
 
 # FishScrapping
 
