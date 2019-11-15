@@ -1,0 +1,651 @@
+	
+
+
+<!DOCTYPE html>
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:fb="http://ogp.me/ns/fb#">
+
+<head>
+	<meta property="og:title" content="Gadus morhua summary page" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://www.fishbase.us/summary/Gadus-morhua.html" />
+	<meta property="og:image" content="https://www.fishbase.us/images/thumbnails/jpg/tn_Gamor_u3.jpg" />
+	<meta property="og:site_name" content="FishBase" />
+	<meta property="fb:app_id" content="149230358545215" />
+
+	<meta charset="utf-8">
+	<meta name='keywords' content="Gadus morhua, Atlantic cod, Gadidae, Cods and haddocks, gamefish , maturity">
+	<title>Gadus morhua,  Atlantic cod  : fisheries, aquaculture, gamefish</title>
+	<link rel="stylesheet" href="/css/speciessummary_layout.css" type="text/css">
+	<link rel="stylesheet" href="/fishbase.css" type="text/css">
+	<link rel="stylesheet" href="/css/spsum.css" type="text/css">
+	<link href="/libs/jquery/css/jquery-ui-custom.css" rel="stylesheet" type="text/css"/>
+	<script language="javascript" src="/includes/ajax/ajax.js"></script>
+	<script type="text/javascript" src="/libs/jquery/jquery.js"></script>
+	<script src='/libs/jquery/jquery-ui-min.js'></script>
+	<script src='/libs/jquery/scripts/speciessummary.js'></script>
+	<script src="/jquery/ImageAspectRatio.js"></script>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '149230358545215', // App ID
+          channelUrl : 'https://www.fishbase.us/channel.php', // Channel File
+          status     : true, // check login status
+          cookie     : true, // enable cookies to allow the server to access the session
+          xfbml      : true  // parse XFBML
+        });
+        // Track likes in google analytics
+        FB.Event.subscribe('edge.create', function(targetUrl) {
+            _gaq.push(['_trackSocial', 'facebook', 'like', targetUrl]);
+        });
+        // Track unlikes in google analytics
+        FB.Event.subscribe('edge.remove', function(targetUrl) {
+          _gaq.push(['_trackSocial', 'facebook', 'unlike', targetUrl]);
+        });
+        // Track Share in google analytics
+        FB.Event.subscribe('message.send', function(targetUrl) {
+          _gaq.push(['_trackSocial', 'facebook', 'send', targetUrl]);
+        });
+        // Additional initialization code here
+      };
+
+      // Load the SDK Asynchronously
+      (function(d){
+         var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement('script'); js.id = id; js.async = true;
+         js.src = "//connect.facebook.net/en_US/all.js";
+         ref.parentNode.insertBefore(js, ref);
+       }(document));
+    </script>
+
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=149230358545215";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-4126213-9', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+<div id="fb-root"></div>
+<div id="fb-root"></div>
+
+		<!-- AD section -->
+
+	<div id="ss-ad" style="clear:right">
+		
+			<div class='slabel6 scalign'>This page is sponsored by <br>FishBase Consortium Member</div>
+			<div class='scalign'><a href=' http://www.meeuwig.org/ '><img  class='sralign' border='0' src='../images/sponsorlogos/UWALogo_Sponsor.gif'></a></div>	</div>
+
+	<div id="ss-container">
+		<!-- Search Box -->
+		<div id="search-box" title="Search FishBase" style="display:none">
+			<p>Common name (e.g. trout)</p>
+			<form name="fn_comnames" action="/ComNames/CommonNameSearchList.php" method="post">
+				<input type="hidden" name="crit1_fieldname" value="COMNAMES.ComName">
+				<input type="hidden" name="lang" value="English">
+				<input type="hidden" name="resultPage" value="1" />
+				<input type="hidden" name="crit1_fieldtype" value="CHAR">
+
+				<select name="crit1_operator" size="1">
+					<option value="CONTAINS">contains</option>
+					<option value="BEGINS_WITH">begins with</option>
+					<option value="BEGINS_WITH">begins with</option>
+					<option value="ENDS_WITH">ends with</option>
+					<option value="EQUAL" selected>is</option>
+				</select>
+				<input type="text" name="CommonName" id="CommonName" value=""/>
+				<input type="submit" value="search" />
+			</form>
+
+			<p>Genus + Species (e.g. Gadus morhua)</p>
+			<form name="fn_genspec" action="/Nomenclature/ScientificNameSearchList.php?" method="post">
+				<input name="gs" id="gs" size="35" value=""/>
+				<input type="hidden" name="group" value="summary" />
+				<input type="submit" value="search"/>
+			</form>
+		</div>
+		<!-- Top Menu -->
+		<div id="ss-topmenu" class="slabel7">
+			<div class="floatRight">
+			<a href="https://www.facebook.com/FishBase">
+				<img src="/images/png/facebook-logo.png" height="33" width="33" border="0"/>
+			</a>
+			<!-- <fb:like href="https://www.fishbase.us/summary/Gadus-morhua.html" layout="button_count" width="50" ref="top_sspage"></fb:like> -->
+			<!-- Begin Mod 03/15/17 Shelumiel Ortiz
+			<a href='https://fishbase.us/donate/donate.php'  ><img src='/images/gifs/DonateButton.gif' width='90' alt=''></a>
+			End Mod 03/15/17 Shelumiel Ortiz --> 
+			<a href='/donate/donate.php'  ><img src='/images/gifs/DonateButton.gif' width='90' alt=''></a>
+			</div>
+
+			<div class="menu">
+			
+<ul>
+	<li>
+		<span id='back-to-search'><img src='/images/gifs/FBLogo_s.gif' alt='Back to search' title='Go back to Search page' height='33px' width='33px' border='0' /></span>
+		&nbsp;
+	</li>
+	<li onmouseover="this.className='msieFix'" onmouseout="this.className=''">
+		<span class='bigger'><a href='#' class='scalign' title='Information about this page'>About this page</a></span>
+		<ul>
+			<li>
+				<a href='/manual/English/FishBaseThe_Species_Table.htm' title='More Info on species'>More Info</a>
+			</li>
+			<li>
+				<a href='/manual/French/FishBaseNomenclature.htm#00358710' title='Plus d info'>Plus d'info</a>
+			</li>
+			<li>
+				<a href='/manual/Portuguese/Nomenclature.htm#The_Species_table' title='Mais info'>Mais info</a>
+			</li>
+
+		</ul>
+	</li>
+
+	<li onmouseover="this.className='msieFix'" onmouseout="this.className=''">
+		<span class='bigger'><a href='#' class='scalign' title='Select a language'>Languages</a></span>
+		<ul>
+            <li><a href='../Summary/SpeciesSummary.php?id=69&lang=arabic' title='Arabic'>Arabic</a></li>
+			<li><a href='../Summary/SpeciesSummary.php?id=69&lang=bahasa' title='Bahasa/Malay'>Bahasa/Malay</a></li>
+			<li><a href='../Summary/SpeciesSummary.php?id=69&lang=bangla' title='Bangla'>Bangla</a></li>
+			<li><a href='../Summary/SpeciesSummary.php?id=69&lang=scchinese' title='Chinese (Simplified)'>Chinese(Si)</a></li>
+			<li><a href='../Summary/SpeciesSummary.php?id=69&lang=chinese' title='Chinese (Traditional)'>Chinese(Tr)</a></li>
+			<li><a href='../Summary/SpeciesSummary.php?id=69&lang=german' title='Deutsch'>Deutsch</a></li>
+			<li><a href='../Summary/SpeciesSummary.php?id=69&lang=english' title='English'>English</a></li>
+			<li><a href='../Summary/SpeciesSummary.php?id=69&lang=spanish' title='Español'>Español</a></li>
+			<li><a href='../Summary/SpeciesSummary.php?id=69&lang=farsi' title='Farsi'>Farsi</a></li>
+			<li><a href='../Summary/SpeciesSummary.php?id=69&lang=french' title='Français'>Français</a></li>
+			<li><a href='../Summary/SpeciesSummary.php?id=69&lang=greek' title='Greek'>Greek</a></li>
+			<li><a href='../Summary/SpeciesSummary.php?id=69&lang=hindi' title='Hindi'>Hindi</a></li>
+			<li><a href='../Summary/SpeciesSummary.php?id=69&lang=italian' title='Italiano'>Italiano</a></li>
+			<li><a href='../Summary/SpeciesSummary.php?id=69&lang=japanese' title='Japanese'>Japanese</a></li>
+			<li><a href='../Summary/SpeciesSummary.php?id=69&lang=laos' title='Lao'>Lao</a></li>
+			<li><a href='../Summary/SpeciesSummary.php?id=69&lang=dutch' title='Nederlands'>Nederlands</a></li>
+			<li><a href='../Summary/SpeciesSummary.php?id=69&lang=portuguese' title='Português(Br)'>Português(Br)</a></li>
+			<li><a href='../Summary/SpeciesSummary.php?id=69&lang=portuguese_po' title='Português(Pt)'>Português(Pt)</a></li>
+			<li><a href='../Summary/SpeciesSummary.php?id=69&lang=russian' title='Russian'>Russian</a></li>
+			<li><a href='../Summary/SpeciesSummary.php?id=69&lang=swedish' title='Swedish'>Swedish</a></li>
+			<li><a href='../Summary/SpeciesSummary.php?id=69&lang=thai' title='Thai'>Thai</a></li>
+			<li><a href='../Summary/SpeciesSummary.php?id=69&lang=vietnamese' title='Vietnamese'>Vietnamese</a></li>
+		</ul>
+
+	</li>
+
+	<li onmouseover="this.className='msieFix'" onmouseout="this.className=''">
+		<span class='bigger'><a href='#' class='scalign' title='Send us a Feedback'>User feedbacks</a></span>
+		<ul>
+			<li><a href='javascript:document.mailx.submit()' title='Send us your Comments & Corrections'>Comments & Corrections</a></li>
+			<li><a href='https://www.fishbase.us/FBForum/create_topic.php?speccode=69' title='Ask your questions in Fish Forum'>Fish Forum</a></li>
+			<li><a href='https://www.fishbase.us/FBGuestBook/index.php' title='Sign our Guest Book'>Guest Book</a></li>
+			<li><a href='http://www.facebook.com/FishBase'>Facebook</a></li>
+			<!--<li><a href='https://www.fishbase.us/FishWatcher/url_addform.php?speccode=69' title='Attach your web site to this page'>Add your website</a></li>-->
+		</ul>
+	</li>
+
+	<li>
+		<span class='bigger'><a href='../summary/citation.php' class='scalign' title='How to cite FishBase'>Citation</a></span>
+	</li>
+
+	<li onmouseover="this.className='msieFix'" onmouseout="this.className=''">
+		<span class='bigger'><a  href='#' class='scalign' title='Uploads Gadus morhua'>Uploads</a></span>
+		<ul>
+			<li><a href='https://www.fishbase.us/FishWatcher/url_addform.php?speccode=69' title='Attach your web site to this page'>Attach website</a></li>
+			<li><a href='https://www.fishbase.us/tools/UploadPhoto/start.php?speccode=69' title='Upload photo -  Gadus morhua'>Upload photo</a></li>
+			<li><a href='/tools/UploadVideo/start_info.php?speccode=69' title='Upload video - Gadus morhua'>Upload video</a></li>
+			<li><a href='https://www.fishbase.us/tools/upload-ref/start.php?speccode=69'>Upload references</a></li>
+			<li><a href='https://www.fishbase.us/FishWatcher/checkpassword.php?Genus=Gadus&Species=morhua&vtable=contribution_a'>Fish Watcher</a></li>
+		</ul>
+	</li>
+
+	<li onmouseover="this.className='msieFix'" onmouseout="this.className=''"><span class='bigger'>
+		<a  href='#' class='scalign' title='Restricted - Gadus morhua'>Related species</a></span>
+		<ul>
+				<li><a style = 'width:121px;' href='../identification/SpeciesList.php?genus=Gadus' title='Species in Gadus'>Species in <i>Gadus</i></a></li>
+				<li><a style = 'width:121px;' href='/identification/specieslist.php?famcode=183&areacode=&spines=&fins=' title='Species in Gadidae'>Species in <i>Gadidae</a></i></li>
+			<li style='background: #02CDE5; width:123px; text-align:center;'>- Classification -</li>
+					<li><a style = 'width:121px;' href='/summary/FamilySummary.php?ID=183' class='sciname' title='Family'>Gadidae</a></li>
+					<li><a style = 'width:121px;' href='/summary/OrdersSummary.php?order=Gadiformes' class='sciname' title='Order'>Gadiformes</a></li>
+					<li><a style = 'width:121px; color:#000;' href='#' class='sciname' title='Class'>Actinopterygii</a></li>
+					<li><a style = 'width:121px; color:#000;' href='#' class='sciname' title='Phylum'>Chordata</a></li>
+					<li><a style = 'width:121px; color:#000;' href='#' class='sciname' title='Kingdom'>Animalia</a></li>
+				</ul>
+			</li>
+		<li><span style='width:86px' id='search-button' class='scalign'>&nbsp;<img src='/images/png/search-logo.png' height='33px' width='33px' alt='Search' title='Search names' />&nbsp;</span></li></ul>			</div>
+		</div>
+
+
+		<!-- Sci name, Author, FBname section -->
+		<div id="ss-sciname">
+			<h1>
+				<span class='sciname'><b><a href='http://researcharchive.calacademy.org/research/ichthyology/catalog/fishcatget.asp?genid=113' alt='Catalog of Fishes - Genera' title='Catalog of Fishes - Genera' target='_blank'>Gadus</a></b></span> <span class='sciname'><b><a href='http://researcharchive.calacademy.org/research/ichthyology/catalog/fishcatget.asp?spid=12302' alt='Catalog of Fishes - Species' title='Catalog of Fishes - Species' target='_blank'>morhua</a></b></span> <span class='sheader6 noLinkDesign'><a href='http://en.wikipedia.org/wiki/Carl_Linnaeus' alt='Wiki' title='Wiki' target='_blank'>Linnaeus</a></span><span class='sheader6 noLinkDesign'><a href='http://researcharchive.calacademy.org/research/ichthyology/catalog/getref.asp?id=2787' alt='Catalog of Fishes - References' title='Catalog of Fishes - References' target='_blank'>, 1758</a></span>			</h1>
+			<span class='sheader2'>
+				Atlantic cod			</span>
+		</div>
+
+		<!-- Map and photo container -->
+
+		
+		<div id="ss-photomap-container">
+							<!-- Aquamaps -->
+				<div id="ss-map">
+					Add your observation in <a href='https://www.fishbase.us/FishWatcher/checkpassword.php?Genus=Gadus&Species=morhua&vtable=contribution_a'>Fish Watcher</a><div class="aquamaps"><center>
+	<table border='1' cellpadding='2' cellspacing='0' style='font-size : xx-small; font-family : Arial;' width = '350'>
+	<tr><td align='center'>
+	<a href='#' onmouseover='javascript:document.getElementById(&quot;pix&quot;).src=&quot;/images/aquamaps/native/exp_7_pic_Fis-29394.jpg&quot;'>
+	Native range</a> |
+		<a href='#' onmouseover='javascript:document.getElementById(&quot;pix&quot;).src=&quot;/images/aquamaps/suitable/exp_7_pic_Fis-29394.jpg&quot;'>
+		All suitable habitat</a> |
+		<a href='#' onmouseover='javascript:document.getElementById(&quot;pix&quot;).src=&quot;/images/aquamaps/pointmap/exp_7_pic_Fis-29394.jpg&quot;'>
+		Point map</a> |
+		<a href='#' onmouseover='javascript:document.getElementById(&quot;pix&quot;).src=&quot;/images/aquamaps/2050/exp_7_pic_Fis-29394.jpg&quot;'>
+		Year 2100</a>				
+	</td></tr><tr><td align='center'>
+	<a target='am_Fis-29394' href='http://www.aquamaps.org/preMap.php?cache=1&SpecID=Fis-29394&expert_id=7'>
+	<img id='pix' src='/images/aquamaps/native/exp_7_pic_Fis-29394.jpg'>
+	</a>
+	</td></tr>
+
+	<tr><td align='center' style='font-size : xx-small;'>Reviewed map
+	</td></tr>
+
+	<tr><td align='center' style='font-size : xx-small;'><font style='font-family : Arial;' >
+			<a target='fb_Fis-29394' href='http://www.fishbase.org/summary/SpeciesSummary.php?genusname=Gadus&speciesname=morhua'><i>Gadus morhua</i></a> 
+			&nbsp; 
+			<a target='am_org' href='http://www.aquamaps.org'>AquaMaps</a>
+			&nbsp;
+			Data sources: 	<a target='gbif_Fis-29394' href='https://www.gbif.org/occurrence/search?q=Gadus morhua'>GBIF</a> 
+							<a target='obis_Fis-29394' href='http://download.iobis.org/?scientificname=Gadus morhua'>OBIS</a>			
+			</font>
+	</td></tr>			
+	</table></center></div>				</div>
+
+						<!-- Species Photo -->
+						<div id="ss-photo">
+				<span>
+					Upload your <a href='https://www.fishbase.us/tools/UploadPhoto/start.php?speccode=69'>photos</a>&nbsp;and&nbsp;<a href='/tools/UploadVideo/start_info.php?speccode=69'>videos</a><BR />				</span>
+				<span class="slabel8">
+				<a href='../photos/thumbnailssummary.php?Genus=Gadus&Species=morhua'>Pictures</a> | <a href='/Videos/SpeciesVideos.php?speccode=69'>
+					Videos |
+					</a>&nbsp; &nbsp; 	<a href='../physiology/FishSoundsList.php?id=69'>
+					Sounds
+				</a>
+			 | <a href='../photos/SpeciesStampsList.php?speccode=69'>Stamps, Coins Misc.</a> | <a href='https://www.google.com/images?hl=en&q=Gadus+morhua&btnG=Search+Images&gbv=2'>Google image</a><div><a style='text-decoration:none;' href='/photos/ThumbnailsSummary.php?Genus=Gadus&Species=morhua'><img style='margin-top: 0; margin-bottom: 0;' name='prefimage' src='/images/thumbnails/jpg/tn_Gamor_u3.jpg' title ='Image of Gadus morhua (Atlantic cod)' alt='Image of Gadus morhua (Atlantic cod)' border='0' ></a></div><span class='sciname slabel8'>Gadus morhua</span><br/><span class='slabel8'>
+					Picture by
+					<a href='/Collaborators/CollaboratorSummary.php?ID=40'>
+					Morris, P.</a><br />
+					</span><!--<script src="/libs/jquery/jquery.js"></script>-->
+<link rel="stylesheet" href="/css/swipeslider.css">
+<script src="/libs/jquery/swipeslider/swipeslider.min.js"></script>
+<script>
+$(window).load(function() {
+	if($("#ss-photo-full").length > 0){			//the photo is full width
+		$('#image-slider').swipeslider({sliderHeight:'27%', autoPlayTimeout: 8000});
+	}else{
+		$('#image-slider').swipeslider({sliderHeight:'52%', autoPlayTimeout: 8000});
+	}
+});
+</script>
+<style>
+.swipslider{
+	max-width: 310px;
+	margin:	auto;
+}
+
+</style>					<!--<span class='sciname'>
+						Gadus morhua					</span>
+					<br/>
+					<span class="slabel8">
+						
+						Picture by
+						<a href='/Collaborators/CollaboratorSummary.php?ID=40'>
+						Morris, P.</a><br />
+											</span>-->
+				</span>
+			</div> <!-- ss-photo -->
+		</div> <!-- ss-photomap-container -->
+
+		<!-- Main Content -->
+		<div id="ss-main">
+			<p> <!-- CLASSIFICATION / NAMES -->
+			<h1 class='slabel sleft bottomBorder'>
+				Classification / Names  				<span class="addLinks"> <!-- not bold -->
+				<span class='slabel1'><a href='/ComNames/CommonNamesList.php?ID=69&GenusName=Gadus&SpeciesName=morhua&StockCode=79' alt='Common names for Gadus morhua' title='Common names for Gadus morhua' target='_blank'>Common names</a></span> | <span class='slabel1'><a href='../Nomenclature/SynonymsList.php?ID=69&SynCode=29394&GenusName=Gadus&SpeciesName=morhua' alt='Synonyms for Gadus morhua' title='Synonyms for Gadus morhua' target='_blank'>Synonyms</a></span> | Catalog of Fishes (<A href='http://researcharchive.calacademy.org/research/ichthyology/catalog/fishcatget.asp?genid=113' target='_blank'>gen.</A>, <A href='http://researcharchive.calacademy.org/research/ichthyology/catalog/fishcatget.asp?spid=12302' target='_blank'>sp.</A>) | <span class='slabel1'><a href='http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=164712' target='_blank'>ITIS</a></span> | <span class='slabel1'><a href='http://www.catalogueoflife.org/col/search/all/key/Gadus+morhua/match/1' target='_blank'>CoL</a></span> | <a href='http://www.marinespecies.org/aphia.php?p=taxdetails&id=126436' target='_blank'>WoRMS</a> | <span class='slabel1'><a href='http://www.cloffa.ird.fr/table/taxon2/?idfishbase=69' alt='Cloffa for Gadus morhua' title='Cloffa for Gadus morhua' target='_blank'>Cloffa</a></span>				</span>
+			</h1>
+				<div class="smallSpace">
+				Actinopterygii (ray-finned fishes) > <span class='slabel1'><a href='/summary/OrdersSummary.php?order=Gadiformes' alt='Gadiformes for Gadus morhua' title='Gadiformes for Gadus morhua' target='_blank'>Gadiformes</a></span> (Cods) > <span class='slabel1'><a href='/summary/FamilySummary.php?ID=183' alt='Gadidae for Gadus morhua' title='Gadidae for Gadus morhua' target='_blank'>Gadidae</a></span> (Cods and haddocks)<br/>						<span>
+							Etymology: <span style="font-style: italic;">Gadus:</span> <span>Latin, gadus = a fish, cod? (Ref. <a href='/references/FBRefSummary.php?ID=45335' target='_blank'>45335</a>)</span>.&nbsp;&nbsp;More on author: <span class='slabel1'><a href='http://en.wikipedia.org/wiki/Carl_Linnaeus' alt='Wiki' title='Wiki' target='_blank'>Linnaeus</a></span>.						</span>
+					</div>
+			</p>
+			
+			<!-- start Environment / Climate / Range -->
+			<p>
+				<h1 class='slabel bottomBorder'>
+					Environment: milieu / climate zone / depth range / distribution range					<span class="addLinks">
+						<span class='slabel1'><a href='../Ecology/FishEcologySummary.php?StockCode=79&GenusName=Gadus&SpeciesName=morhua' alt='Ecology for Gadus morhua' title='Ecology for Gadus morhua' target='_blank'>Ecology</a></span>					</span>
+				</h1>
+				<div class="smallSpace">
+				<span>
+					Marine; brackish;  benthopelagic; oceanodromous (Ref. <A href='../references/FBRefSummary.php?ID=51243'>51243</A>); depth range 0 - 600 m (Ref. <A href='../references/FBRefSummary.php?ID=1371'>1371</A>), usually 150 - 200 m (Ref. <A href='../references/FBRefSummary.php?ID=54441'>54441</A>). &nbsp;&nbsp;Temperate; 0&deg;C - 15&deg;C; 83&deg;N -   35&deg;N, 76&deg;W -   86&deg;E (Ref. <A href='../references/FBRefSummary.php?ID=1371'>1371</A>)				</span>
+				</div>
+			</p>
+			
+			<!-- start Distribution -->
+			<p>
+				<h1 class='slabel bottomBorder'>
+					Distribution					<span class ='addLinks'>
+					<span class='slabel1'><a href='/Country/CountryList.php?ID=69&GenusName=Gadus&SpeciesName=morhua' alt='Countries for Gadus morhua' title='Countries for Gadus morhua' target='_blank'>Countries</a></span> | <span class='slabel1'><a href='../Country/FaoAreaList.php?ID=69&GenusName=Gadus&SpeciesName=morhua&fc=183&StockCode=79&Scientific=Gadus+morhua' alt='FAO areas for Gadus morhua' title='FAO areas for Gadus morhua' target='_blank'>FAO areas</a></span> | <span class='slabel1'><a href='../trophiceco/EcosysList.php?ID=69&GenusName=Gadus&SpeciesName=morhua' alt='Ecosystems for Gadus morhua' title='Ecosystems for Gadus morhua' target='_blank'>Ecosystems</a></span> | <span class='slabel1'><a href='../museum/OccurrencesList.php?genus=Gadus&species=morhua' alt='Occurrences for Gadus morhua' title='Occurrences for Gadus morhua' target='_blank'>Occurrences</a></span> | <a href='/map/CRIAMapper/CRIAMapViewer.php?genus=Gadus&species=morhua'>Point map</a> | <span class='slabel1'><a href='../Introductions/IntroductionsList.php?ID=69&GenusName=Gadus&SpeciesName=morhua&fc=183&StockCode=79' alt='Introductions for Gadus morhua' title='Introductions for Gadus morhua' target='_blank'>Introductions</a></span> | <span class='slabel1'><a href='http://www.poissons-afrique.ird.fr/faunafri/index.svg?agg=idst&idfb=69' alt='Faunafri for Gadus morhua' title='Faunafri for Gadus morhua' target='_blank'>Faunafri</a></span>				</span>
+				</h1>
+				<div class="smallSpace">
+				<span>
+					North Atlantic and Arctic: Ungava Bay in Canada along the North American coast to Cape Hatteras; North Carolina in the western Atlantic. East and west coast of Greenland; around Iceland; from Barents Sea including the region around Bear Island along the European coast to Bay of Biscay (Ref. <a href='../references/FBRefSummary.php?ID=88171'>88171</a>).<BR />				</span>
+				</div>
+			</p>
+
+			<p><!-- start Length at First Maturity/Size/Weight/Age -->
+				<h1 class='slabel bottomBorder'>
+					Length at first maturity / Size / Weight / Age<br />				</h1>
+				<div class="smallSpace">
+				<span>
+					Maturity: L<sub>m</sub> <a href=../Reproduction/MaturityList.php?ID=69>68.3</a>, range 31 -  74 cm<BR /> Max length : 200 cm TL male/unsexed; (Ref. <A href='../references/FBRefSummary.php?ID=1371'>1371</A>); common length : 100.0 cm TL male/unsexed; (Ref. <A href='../references/FBRefSummary.php?ID=1371'>1371</A>); max. published weight: 96.0 kg (Ref. <A href='../references/FBRefSummary.php?ID=9988'>9988</A>); max. reported age: 25 years (Ref. <A href='../references/FBRefSummary.php?ID=173'>173</A>)				</span>
+				</div>
+			</p>
+
+			<!-- start Morphology -->
+						<p>
+				<h1 class='slabel bottomBorder'>
+					Short description					<span class="addLinks">
+					<span class='slabel1'><a href='../physiology/MorphDataList.php?ID=69&GenusName=Gadus&SpeciesName=morhua' alt='Morphology for Gadus morhua' title='Morphology for Gadus morhua' target='_blank'>Morphology</a></span> | <span class='slabel1'><a href='../physiology/MorphMetList.php?ID=69&GenusName=Gadus&SpeciesName=morhua' alt='Morphometrics for Gadus morhua' title='Morphometrics for Gadus morhua' target='_blank'>Morphometrics</a></span>					</span>
+				</h1>
+				<div class="smallSpace">
+				<span>
+					
+				<a href=../Glossary/Glossary.php?q=dorsal%20fin&language=english&sc=is >Dorsal</a>
+				<a href=../Glossary/Glossary.php?q=spine&language=english&sc=is >spines</a>
+				(total): 0;
+					<a href=../Glossary/Glossary.php?q=dorsal%20fin&language=english&sc=is >Dorsal</a>
+					<a href=../Glossary/Glossary.php?q=soft%20ray&language=english&sc=is >soft rays</a>
+					(total): 44-55;
+				<a href=../Glossary/Glossary.php?q=anal%20fin&language=english&sc=is >Anal</a>
+				<a href=../Glossary/Glossary.php?q=spine&language=english&sc=is >spines</a>: 0;
+					<a href=../Glossary/Glossary.php?q=anal%20fin&language=english&sc=is >Anal</a>
+					<a href=../Glossary/Glossary.php?q=soft%20ray&language=english&sc=is >soft rays</a>: 33 - 45;
+				<a href=../Glossary/Glossary.php?q=vertebrae&language=english&sc=is >Vertebrae</a>: 51 - 55. Protruding upper jaw, a conspicuous barbel on the lower jaw, and light lateral line, curved above the pectoral fins. Predorsal distance is less than one third of total length; body depth about 1/5 of total length. Color varies from brownish to greenish or gray dorsally and on upper sides, becoming pale and silvery ventrally. Peritoneum silvery.				</span>
+				</div>
+			</p>
+			
+			<!-- Start Biology -->
+			<p>
+			<form action='/Glossary/Glossary.php' method='get'>
+			<div class='sleft'>
+				<h1 class='slabel bottomBorder'>
+					Biology					<span class="floatRight">
+						<span class='uploads'>
+				&nbsp;&nbsp;&nbsp;
+				Glossary
+				<input  type='text' name='q' id='q' size='10' maxlength='25' />
+				</span>
+				<span class='submit slabel6'>
+				<input  type='submit' value='Search'> (e.g.  epibenthic)
+				</span>
+			<BR />					</span>
+				</h1>
+			</div>
+
+			</form>
+			<div class="smallSpace">
+			<span>
+				Widely distributed in a variety of habitats, from the shoreline down to the continental shelf. Juveniles prefer shallow (less than 10-30 m depth) sublittoral waters with complex habitats, such as seagrass beds, areas with gravel, rocks, or boulder, which provide protection from predators (Refs. 89383, 89384). Adults are usually found in deeper, colder waters. During the day, form schools and swim about 30-80 m above the bottom, dispersing at night to feed (Ref. <a href='../references/FBRefSummary.php?ID=1371'>1371</a>, <a href='../references/FBRefSummary.php?ID=89385'>89385</a>). Omnivorous; feed at dawn or dusk on invertebrates and fish, including young cod. (Ref. <a href='../references/FBRefSummary.php?ID=1371'>1371</a>). Migrate between spawning, feeding and overwintering areas, mostly within the boundaries of the respective stocks. Migrations >200 km are rare occurrences (Refs. 89386, 89387). Marketed fresh, dried or salted, smoked and frozen; eaten steamed, fried, broiled, boiled, microwaved and baked (Ref. <a href='../references/FBRefSummary.php?ID=9988'>9988</a>).			</span>
+			</div>
+			</p>
+
+			<!-- start Reproduction -->
+			<p>
+				<h1 class='slabel bottomBorder'>
+					Life cycle and mating behavior					<span class ='addLinks'>
+					<span class='slabel1'><a href='/Reproduction/MaturityList.php?ID=69&GenusName=Gadus&SpeciesName=morhua&fc=183' alt='Maturity for Gadus morhua' title='Maturity for Gadus morhua' target='_blank'>Maturity</a></span> | <span class='slabel1'><a href='../Reproduction/FishReproSummary.php?ID=69&GenusName=Gadus&SpeciesName=morhua&fc=183&StockCode=79' alt='Reproduction for Gadus morhua' title='Reproduction for Gadus morhua' target='_blank'>Reproduction</a></span> | <span class='slabel1'><a href='/Reproduction/SpawningList.php?ID=69&GenusName=Gadus&SpeciesName=morhua&fc=183&StockCode=79' alt='Spawning for Gadus morhua' title='Spawning for Gadus morhua' target='_blank'>Spawning</a></span> | <span class='slabel1'><a href='../Reproduction/FishEggInfoSummary.php?ID=69&GenusName=Gadus&SpeciesName=morhua&fc=183&StockCode=79' alt='Eggs for Gadus morhua' title='Eggs for Gadus morhua' target='_blank'>Eggs</a></span> | <span class='slabel1'><a href='/Reproduction/FecundityList.php?ID=69&GenusName=Gadus&SpeciesName=morhua&fc=183&StockCode=79' alt='Fecundity for Gadus morhua' title='Fecundity for Gadus morhua' target='_blank'>Fecundity</a></span> | <span class='slabel1'><a href='../Reproduction/LarvaeInfoList.php?ID=69&GenusName=Gadus&SpeciesName=morhua&stockcode=79' alt='Larvae for Gadus morhua' title='Larvae for Gadus morhua' target='_blank'>Larvae</a></span>				</span>
+				</h1>
+				<div class="smallSpace">
+				<span>
+				Spawning occurs in winter and beginning of spring, where big schools are formed. Spawning sites are in offshore waters, at or near the bottom, in 50-200 m depth and 0-12 °C (preferred range 0-6°C) (Refs. <a href='../references/FBRefSummary.php?ID=1371'>1371</a>, <a href='../references/FBRefSummary.php?ID=89387'>89387</a>). May form spawning aggregations in the water column when bottom temperatures are unsuitable (Ref. <a href='../references/FBRefSummary.php?ID=1371'>1371</a>). Different spawning areas may be used in subsequent years (Ref. <a href='../references/FBRefSummary.php?ID=89387'>89387</a>). Embryo development lasts about 14 days (at 6°C) and larval phase lasts about 3 months(at 8°C). Fecundity ranges from 2.5 million eggs in a 5 kg female to a record of 9 million eggs in a 34 kg female. Reported number of batches spawned in an experiment is 8 - 22 (Ref. <a href='../references/FBRefSummary.php?ID=5513'>5513</a>). Sex ratio is nearly 50%, with slight predominance of females. Classified as a determinate multiple spawner (Ref. <a href='../references/FBRefSummary.php?ID=40290'>40290</a>). Older and larger cod had been found to produce larger eggs with neutral buoyancy at lower salinities. This can be crucial to egg and larval survival (Refs. 31930, 38384). Larvae are pelagic up to 2.5 months before settling on the bottom (Ref. <a href='../references/FBRefSummary.php?ID=1371'>1371</a>).
+In the Baltic, spawning cumulates in March at depths below 20 m near the bottom. The nursery areas are in the inner coastal zone. Recruitment to the fished stock starts below 2 years and peaks at about 3 years of age (Ref. <a href='../references/FBRefSummary.php?ID=5947'>5947</a>).				</span>
+				</div>
+			</p>
+
+
+
+			<p> <!-- Main Reference -->
+				<h1 class='slabel bottomBorder'>
+					Main reference  					<span class='slabel1 addLinks'>
+						<span class='slabel1'><a href='https://www.fishbase.us/tools/upload-ref/start.php?speccode=69' alt='Upload your references for Gadus morhua' title='Upload your references for Gadus morhua' target='_blank'>Upload your references</a></span> | <span class='slabel1'><a href='/References/SummaryRefList.php?ID=69&GenusName=Gadus&SpeciesName=morhua' alt='References for Gadus morhua' title='References for Gadus morhua' target='_blank'>References</a></span> | <span style="color:gray;">Coordinator</span> | <span class='slabel1'><a href='/Collaborators/CollaboratorsList.php?ID=69&Genus=Gadus&Species=morhua' alt='Collaborators for Gadus morhua' title='Collaborators for Gadus morhua' target='_blank'>Collaborators</a></span><BR />					</span>
+				</h1>
+				<div class="smallSpace">
+				<span>
+					<b>Cohen, D.M., T. Inada, T. Iwamoto and N. Scialabba</b>, 1990. FAO species catalogue. Vol. 10. Gadiform fishes of the world (Order Gadiformes). An annotated and illustrated catalogue of cods, hakes, grenadiers and other gadiform fishes known to date. FAO Fish. Synop. 125(10). Rome: FAO. 442 p. (Ref. <A href='../references/FBRefSummary.php?ID=1371'>1371</A>)<BR />				</span>
+				</div>
+			</p>
+
+			<!-- Start IUCN redlist status -->
+			<p>
+			<div class='sleft sonehalf'>
+				<h1 class='slabel bottomBorder'>
+					IUCN Red List Status   (Ref. <A href='../references/FBRefSummary.php?ID=120744'>120744</A>)<BR />				</h1>
+				<div class="smallSpace">
+				<span>
+					<span class='box' style='background-color:#ff0000'>&nbsp;</span><span class=&quot;black&quot;><a class=&quot;black&quot; href=https://www.iucnredlist.org/species/8784/12931575 target=&quot;_blank&quot;> Vulnerable (VU)</a></span>&nbsp;(A1bd); Date assessed: <span class='black'>01 August 1996</span>				</span>
+				</div><br>
+			</div>
+
+			<!-- CITES  -->
+			<div class=''>
+				<h1 class='slabel bottomBorder'>
+					CITES   (Ref. <A href='../references/FBRefSummary.php?ID=115941'>115941</A>)<BR />
+				</h1>
+				<div class="smallSpace">
+				<span>
+					Not Evaluated				</span>
+				</div><br>
+			</div>
+			<!--Begin Mod 10/16/17 Shelumiel Ortiz-->
+			<!--CMS -->
+			<div class='sonehalf'>
+				<h1 class='slabel bottomBorder'>
+					CMS (Ref. <A href='../references/FBRefSummary.php?ID=116361'>116361</A>)<BR />				</h1>
+				<div class="smallSpace">
+				<span>
+					Not Evaluated				</span>
+				</div><br>
+			</div>
+			<!--End Mod 10/16/17 Shelumiel Ortiz--> 
+
+			<!-- Threat to humans -->
+			<div class='rlalign sonehalf'>
+				<h1 class='slabel bottomBorder'>
+					Threat to humans  <BR />				</h1>
+				<div class="smallSpace">
+				<span>
+					<span class='box' style='background-color:#3cb371'>&nbsp;</span> Harmless				</span>
+				</div>
+		    </div><br><br>
+			</p>
+			<br/><br/><br/>
+			<!-- Start human uses-->
+			<p>
+				<h1 class='slabel bottomBorder'>
+					Human uses  				</h1>
+				<div class="smallSpace">
+				<span>
+					Fisheries: highly commercial; aquaculture: commercial; gamefish: yes				</span>
+				</div>
+
+				<div class="smallSpace">
+				<span>
+					FAO(Aquaculture: <a href='../report/FAO/FAOAquacultureList.php?scientific=Gadus+morhua' title='FAO Aquaculture Production'>production</a>, <a href='http://www.fao.org/fishery/culturedspecies/Gadus_morhua/en' title='FAO Cultured Aquatic species fact sheets' target='_blank'>species profile</a>; fisheries: <a href='../report/FAO/FAOCatchList.php?scientific=Gadus+morhua' title='FAO Capture Production'>production</a>, <a href='//www.fao.org/fishery/species/2218' title='FAO Species fact sheets' target='_blank'>species profile</a>; publication : <a href='http://www.fao.org/fishery/publications/query/Gadus morhua,Atlantic cod*' title='FAO publications' target='_blank'>search</a>)  | FIRMS <a href='http://firms.fao.org/firms/search/species/COD' title='FIRMS Fishery Marine Resources fact sheets' target='_blank'>(Stock assessments)</a> | <a href='https://www.fishsource.org/fishbase_query?genus=Gadus&specific_descriptor=morhua' target='_blank' title='Information for Gadus morhua fisheries on FishSource'>FishSource</a> | <span class='slabel1'><a href='http://www.seaaroundus.org/data/#/taxa/600069' target='_blank'>Sea Around Us</a></span>				</span>
+				</div><br>
+			</p>
+			<!-- Start CITES -->
+						<!-- start More Information -->
+			<div id='ss-moreinfo-container'>
+				<p>
+					<h1 class='slabel bottomBorder'>
+						More information					</h1>
+					<!-- start More Information 1st column -->
+					<div class='ss-moreinfo'>
+						<span class='slabel1'><a href='/Country/CountryList.php?ID=69&GenusName=Gadus&SpeciesName=morhua' alt='Countries for Gadus morhua' title='Countries for Gadus morhua' target='_blank'>Countries</a></span><BR /><span class='slabel1'><a href='../Country/FaoAreaList.php?ID=69&GenusName=Gadus&SpeciesName=morhua&fc=183&StockCode=79&Scientific=Gadus+morhua' alt='FAO areas for Gadus morhua' title='FAO areas for Gadus morhua' target='_blank'>FAO areas</a></span><BR /><span class='slabel1'><a href='../trophiceco/EcosysList.php?ID=69&GenusName=Gadus&SpeciesName=morhua' alt='Ecosystems for Gadus morhua' title='Ecosystems for Gadus morhua' target='_blank'>Ecosystems</a></span><BR /><span class='slabel1'><a href='../museum/OccurrencesList.php?genus=Gadus&species=morhua' alt='Occurrences for Gadus morhua' title='Occurrences for Gadus morhua' target='_blank'>Occurrences</a></span><BR /><span class='slabel1'><a href='../Introductions/IntroductionsList.php?ID=69&GenusName=Gadus&SpeciesName=morhua&fc=183&StockCode=79' alt='Introductions for Gadus morhua' title='Introductions for Gadus morhua' target='_blank'>Introductions</a></span><BR /><span class='slabel1'><a href='../Summary/Stocks/StocksDefinition.php?ID=69&GenusName=Gadus&SpeciesName=morhua&StockCode=79' alt='Stocks for Gadus morhua' title='Stocks for Gadus morhua' target='_blank'>Stocks</a></span><BR /><span class='slabel1'><a href='../Ecology/FishEcologySummary.php?StockCode=79&GenusName=Gadus&SpeciesName=morhua' alt='Ecology for Gadus morhua' title='Ecology for Gadus morhua' target='_blank'>Ecology</a></span><BR /><span class='slabel1'><a href='/TrophicEco/DietCompoList.php?ID=69&GenusName=Gadus&SpeciesName=morhua&fc=183&StockCode=79' alt='Diet for Gadus morhua' title='Diet for Gadus morhua' target='_blank'>Diet</a></span><BR /><span class='slabel1'><a href='../TrophicEco/FoodItemsList.php?vstockcode=79&genus=Gadus&species=morhua' alt='Food items for Gadus morhua' title='Food items for Gadus morhua' target='_blank'>Food items</a></span><BR /><span class='slabel1'><a href='../TrophicEco/FoodConsumptionList.php?ID=69&GenusName=Gadus&SpeciesName=morhua' alt='Food consumption for Gadus morhua' title='Food consumption for Gadus morhua' target='_blank'>Food consumption</a></span><BR /><span class='slabel1'><a href='../TrophicEco/RationList.php?ID=69&GenusName=Gadus&SpeciesName=morhua' alt='Ration for Gadus morhua' title='Ration for Gadus morhua' target='_blank'>Ration</a></span><BR />					</div>
+					<!-- start More Information 2nd column -->
+					<div class='ss-moreinfo'>
+						<span class='slabel1'><a href='/ComNames/CommonNamesList.php?ID=69&GenusName=Gadus&SpeciesName=morhua&StockCode=79' alt='Common names for Gadus morhua' title='Common names for Gadus morhua' target='_blank'>Common names</a></span><BR /><span class='slabel1'><a href='../Nomenclature/SynonymsList.php?ID=69&SynCode=29394&GenusName=Gadus&SpeciesName=morhua' alt='Synonyms for Gadus morhua' title='Synonyms for Gadus morhua' target='_blank'>Synonyms</a></span><BR /><span class='slabel1'><a href='../physiology/OxygenDataList.php?ID=69&GenusName=Gadus&SpeciesName=morhua&fc=183&StockCode=79' alt='Metabolism for Gadus morhua' title='Metabolism for Gadus morhua' target='_blank'>Metabolism</a></span><BR /><span class='slabel1'><a href='../TrophicEco/PredatorList.php?ID=69&GenusName=Gadus&SpeciesName=morhua' alt='Predators for Gadus morhua' title='Predators for Gadus morhua' target='_blank'>Predators</a></span><BR /><span class='slabel1' style='color:gray;'>Ecotoxicology</span><BR /><span class='slabel1'><a href='../Reproduction/FishReproSummary.php?ID=69&GenusName=Gadus&SpeciesName=morhua&fc=183&StockCode=79' alt='Reproduction for Gadus morhua' title='Reproduction for Gadus morhua' target='_blank'>Reproduction</a></span><BR /><span class='slabel1'><a href='/Reproduction/MaturityList.php?ID=69&GenusName=Gadus&SpeciesName=morhua&fc=183' alt='Maturity for Gadus morhua' title='Maturity for Gadus morhua' target='_blank'>Maturity</a></span><BR /><span class='slabel1'><a href='/Reproduction/SpawningList.php?ID=69&GenusName=Gadus&SpeciesName=morhua&fc=183&StockCode=79' alt='Spawning for Gadus morhua' title='Spawning for Gadus morhua' target='_blank'>Spawning</a></span><BR /><span class='slabel1'><a href='/Reproduction/Spawningaggregationlist.php?ID=69&GenusName=Gadus&SpeciesName=morhua&fc=183&StockCode=79' alt='Spawning aggregation for Gadus morhua' title='Spawning aggregation for Gadus morhua' target='_blank'>Spawning aggregation</a></span><BR /><span class='slabel1'><a href='/Reproduction/FecundityList.php?ID=69&GenusName=Gadus&SpeciesName=morhua&fc=183&StockCode=79' alt='Fecundity for Gadus morhua' title='Fecundity for Gadus morhua' target='_blank'>Fecundity</a></span><BR /><span class='slabel1'><a href='../Reproduction/FishEggInfoSummary.php?ID=69&GenusName=Gadus&SpeciesName=morhua&fc=183&StockCode=79' alt='Eggs for Gadus morhua' title='Eggs for Gadus morhua' target='_blank'>Eggs</a></span><BR /><span class='slabel1'><a href='../Reproduction/FishEggDevList.php?ID=69&GenusName=Gadus&SpeciesName=morhua&StockCode=79' alt='Egg development for Gadus morhua' title='Egg development for Gadus morhua' target='_blank'>Egg development</a></span><BR />					</div>
+					<!-- start More Information 3rd column -->
+					<div class='ss-moreinfo'>
+						<span class='slabel1'><a href='/popdyn/PopCharList.php?ID=69&GenusName=Gadus&SpeciesName=morhua&fc=183' alt='Age/Size for Gadus morhua' title='Age/Size for Gadus morhua' target='_blank'>Age/Size</a></span><BR /><span class='slabel1'><a href='/popdyn/PopGrowthList.php?ID=69&GenusName=Gadus&SpeciesName=morhua&fc=183' alt='Growth for Gadus morhua' title='Growth for Gadus morhua' target='_blank'>Growth</a></span><BR /><span class='slabel1'><a href='/popdyn/LWRelationshipList.php?ID=69&GenusName=Gadus&SpeciesName=morhua&fc=183' alt='Length-weight for Gadus morhua' title='Length-weight for Gadus morhua' target='_blank'>Length-weight</a></span><BR /><span class='slabel1'><a href='../popdyn/LLRelationshipList.php?ID=69&GenusName=Gadus&SpeciesName=morhua&fc=183' alt='Length-length for Gadus morhua' title='Length-length for Gadus morhua' target='_blank'>Length-length</a></span><BR /><span class='slabel1'><a href='../popdyn/LengthFreqList.php?ID=69' alt='Length-frequencies for Gadus morhua' title='Length-frequencies for Gadus morhua' target='_blank'>Length-frequencies</a></span><BR /><span class='slabel1'><a href='../physiology/MorphMetList.php?ID=69&GenusName=Gadus&SpeciesName=morhua' alt='Morphometrics for Gadus morhua' title='Morphometrics for Gadus morhua' target='_blank'>Morphometrics</a></span><BR /><span class='slabel1'><a href='../physiology/MorphDataList.php?ID=69&GenusName=Gadus&SpeciesName=morhua' alt='Morphology for Gadus morhua' title='Morphology for Gadus morhua' target='_blank'>Morphology</a></span><BR /><span class='slabel1'><a href='../Reproduction/LarvaeInfoList.php?ID=69&GenusName=Gadus&SpeciesName=morhua&stockcode=79' alt='Larvae for Gadus morhua' title='Larvae for Gadus morhua' target='_blank'>Larvae</a></span><BR /><span class='slabel1'><a href='../Reproduction/LarvaeDynaSummary.php?GenusName=Gadus&SpeciesName=morhua&StockCode=79&ID=69' alt='Larval dynamics for Gadus morhua' title='Larval dynamics for Gadus morhua' target='_blank'>Larval dynamics</a></span><BR /><span class='slabel1'><a href='/Recruitment/RecruitmentList.php?ID=69&GenusName=Gadus&SpeciesName=morhua' alt='Recruitment for Gadus morhua' title='Recruitment for Gadus morhua' target='_blank'>Recruitment</a></span><BR /><span class='slabel1'><a href='../Abundance/AbundanceList.php?ID=69&GenusName=Gadus&SpeciesName=morhua' alt='Abundance for Gadus morhua' title='Abundance for Gadus morhua' target='_blank'>Abundance</a></span><BR />					</div>
+					<!-- start More Information 4th column -->
+					<div class='ss-moreinfo'>
+						<span class='slabel1'><a href='/References/SummaryRefList.php?ID=69&GenusName=Gadus&SpeciesName=morhua' alt='References for Gadus morhua' title='References for Gadus morhua' target='_blank'>References</a></span><BR /><span class='slabel1' style='color:gray;'>Aquaculture</span><BR /><span class='slabel1' style='color:gray;'>Aquaculture profile</span><BR /><span class='slabel1' style='color:gray;'>Strains</span><BR /><span class='slabel1'><a href='../Genetics/FishGeneticsList.php?ID=69&GenusName=Gadus&SpeciesName=morhua' alt='Genetics for Gadus morhua' title='Genetics for Gadus morhua' target='_blank'>Genetics</a></span><BR /><span class='slabel1'><a href='../Genetics/FishElecStudiesList.php?ID=69&GenusName=Gadus&SpeciesName=morhua' alt='Allele frequencies for Gadus morhua' title='Allele frequencies for Gadus morhua' target='_blank'>Allele frequencies</a></span><BR /><span class='slabel1' style='color:gray;'>Heritability</span><BR /><span class='slabel1'><a href='../Diseases/DiseasesList.php?ID=69&StockCode=79' alt='Diseases for Gadus morhua' title='Diseases for Gadus morhua' target='_blank'>Diseases</a></span><BR /><span class='slabel1'><a href='../Aquaculture/ProcessingList.php?speccode=69&GenusName=Gadus&SpeciesName=morhua' alt='Processing for Gadus morhua' title='Processing for Gadus morhua' target='_blank'>Processing</a></span><BR /><span class='slabel1'><a href='../summary/biomass.php?id=69' alt='Mass conversion for Gadus morhua' title='Mass conversion for Gadus morhua' target='_blank'>Mass conversion</a></span><BR />					</div>
+					<!-- start More Information 5th column -->
+					<div >
+						<span class='slabel1'><a href='/Collaborators/CollaboratorsList.php?ID=69&Genus=Gadus&Species=morhua' alt='Collaborators for Gadus morhua' title='Collaborators for Gadus morhua' target='_blank'>Collaborators</a></span><BR /><span class='slabel1'><a href='../photos/thumbnailssummary.php?Genus=Gadus&Species=morhua' alt='Pictures for Gadus morhua' title='Pictures for Gadus morhua' target='_blank'>Pictures</a></span><BR /><span class='slabel1'><a href='../photos/SpeciesStampsList.php?speccode=69' alt='Stamps, Coins Misc. for Gadus morhua' title='Stamps, Coins Misc. for Gadus morhua' target='_blank'>Stamps, Coins Misc.</a></span><BR /><span class='slabel1'><a href='../physiology/FishSoundsList.php?id=69' alt='Sounds for Gadus morhua' title='Sounds for Gadus morhua' target='_blank'>Sounds</a></span><BR /><span class='slabel1' style='color:gray;'>Ciguatera</span><BR /><span class='slabel1'><a href='../Physiology/SpeedList.php?ID=69&GenusName=Gadus&SpeciesName=morhua' alt='Speed for Gadus morhua' title='Speed for Gadus morhua' target='_blank'>Speed</a></span><BR /><span class='slabel1'><a href='../physiology/SwimModeList.php?ID=69' alt='Swim. type for Gadus morhua' title='Swim. type for Gadus morhua' target='_blank'>Swim. type</a></span><BR /><span class='slabel1' style='color:gray;'>Gill area</span><BR /><span class='slabel1' style='color:gray;'>Otoliths</span><BR /><span class='slabel1'><a href='../physiology/BrainsDataList.php?ID=69&GenusName=Gadus&SpeciesName=morhua&fc=183' alt='Brains for Gadus morhua' title='Brains for Gadus morhua' target='_blank'>Brains</a></span><BR /><span class='slabel1'><a href='../physiology/visionlist.php?id=69' alt='Vision for Gadus morhua' title='Vision for Gadus morhua' target='_blank'>Vision</a></span><BR />					</div>
+				</p>
+			</div>
+			<!-- start Tools -->
+			<p>
+				<h1 class='slabel bottomBorder fontSize10'>Tools<BR /></h1>
+				<div class="smallSpace">
+				<span>
+					<span class='slabel1'><a href='../FBQuiz/QuizBiodiv_main.php?speccode=69' alt='Bio-Quiz for Gadus morhua' title='Bio-Quiz for Gadus morhua' target='_blank'>Bio-Quiz</a></span> | <span class='slabel1'><a href='../FieldGuide/FieldGuideSummary.php?GenusName=Gadus&SpeciesName=morhua&pda=1&sps=' alt='E-book for Gadus morhua' title='E-book for Gadus morhua' target='_blank'>E-book</a></span> | <span class='slabel1'><a href='../FieldGuide/FieldGuideSummary.php?GenusName=Gadus&SpeciesName=morhua&sps=&print=' alt='Field guide for Gadus morhua' title='Field guide for Gadus morhua' target='_blank'>Field guide</a></span> | <span class='slabel1'><a href='../Keys/ListIDKeys.php?ID=69&GenusName=Gadus&SpeciesName=morhua' alt='Identification keys for Gadus morhua' title='Identification keys for Gadus morhua' target='_blank'>Identification keys</a></span> | <span class='slabel1'><a href='../report/LFAnalysis_step01.php?speccode=69' alt='Length-frequency wizard for Gadus morhua' title='Length-frequency wizard for Gadus morhua' target='_blank'>Length-frequency wizard</a></span> | <span class='slabel1'><a href='/popdyn/KeyfactsSummary_1.php?ID=69&GenusName=Gadus&SpeciesName=morhua&vStockCode=79&fc=183' alt='Life-history tool for Gadus morhua' title='Life-history tool for Gadus morhua' target='_blank'>Life-history tool</a></span> | <span class='slabel1'><a href='../Map/OccurrenceMapList.php?genus=Gadus&species=morhua' alt='Point map for Gadus morhua' title='Point map for Gadus morhua' target='_blank'>Point map</a></span> | 						<a href="/tools/Classification/ClassificationTree.php?genus=Gadus&species=morhua#Gadusmorhua">Classification Tree</a>
+						 | <span class='slabel1'><a href='http://www.fishbase.us/CatchMSY/intro.php?genus=Gadus&species=morhua' alt='Catch-MSY for Gadus morhua' title='Catch-MSY for Gadus morhua' target='_blank'>Catch-MSY</a></span> | 				</span>
+				</div>
+			</p>
+			<!-- start Special reports -->
+			<p>
+				<h1 class='slabel bottomBorder fontSize10'>Special reports<BR /> </h1>
+				<div class="smallSpace">
+				<span>
+					<span class='slabel1'><a href='/Aquaculture/AquamaintList.php?speccode=69&fbx=&rde=' alt='Check for Aquarium maintenance for Gadus morhua' title='Check for Aquarium maintenance for Gadus morhua' target='_blank'>Check for Aquarium maintenance</a></span> | <span class='slabel1'><a href='/summary/FactSheetList.php?speccode=69&src=1' alt='Check for Species Fact Sheets for Gadus morhua' title='Check for Species Fact Sheets for Gadus morhua' target='_blank'>Check for Species Fact Sheets</a></span> | <span class='slabel1'><a href='/summary/FactSheetList.php?speccode=69&src=2' alt='Check for Aquaculture Fact Sheets for Gadus morhua' title='Check for Aquaculture Fact Sheets for Gadus morhua' target='_blank'>Check for Aquaculture Fact Sheets</a></span>				</span>
+				</div>
+			</p>
+			<!-- Start Download Zone / Download XML : Kit Elloran -->
+			<p>
+				<h1 class='slabel bottomBorder'>Download XML<BR /></h1>
+				<div class="smallSpace">
+				<span>
+					<span class='slabel1'><a href='../webservice/summary/fb/showXML.php?identifier=FB-69&ProviderDbase=03' alt='Summary page for Gadus morhua' title='Summary page for Gadus morhua' target='_blank'>Summary page</a></span> | <span class='slabel1'><a href='../webservice/Occurrence/PointData.php?Genus=Gadus&Species=morhua' alt='Point data for Gadus morhua' title='Point data for Gadus morhua' target='_blank'>Point data</a></span> | <span class='slabel1'><a href='../webservice/ComNames/comnamesxml.php?Genus=Gadus&Species=morhua' alt='Common names for Gadus morhua' title='Common names for Gadus morhua' target='_blank'>Common names</a></span> | <span class='slabel1'><a href='../webservice/photos/FishPicsList.php?Genus=Gadus&Species=morhua&type=' alt='Photos for Gadus morhua' title='Photos for Gadus morhua' target='_blank'>Photos</a></span>				</span>
+				</div>
+			</p>
+			<!-- start Internet Sources -->
+			<p>
+				<h1 class='slabel bottomBorder fontSize10'>
+					Internet sources<BR />				</h1>
+				<div class="smallSpace">
+				<span>
+					<a href='http://aquaticcommons.org/cgi/search/archive/advanced?keywords=Gadus+morhua' target='_blank'>Aquatic Commons</a> | <span class='slabel1'><a href='http://www.biodiversitylibrary.org/search?SearchTerm=Gadus+morhua#/names' target='_blank'>BHL</a></span> | <span class='slabel1'><a href='http://www.cloffa.ird.fr/table/taxon2/?idfishbase=69' target='_blank'>Cloffa</a></span> | <span class='slabel1'><a href='http://www.barcodinglife.org/views/taxbrowser.php?taxon=Gadus+morhua' target='_blank'>BOLDSystems</a></span> | <span class='slabel1'><a href='https://www.fishbase.us/FishWatcher/SpeciesURLList.php?speccode=69' target='_blank'>Websites from users</a></span> | <span class='slabel1'><a href='https://www.fishbase.us/FishWatcher/CollectionsList.php?speccode=69&what=Species' target='_blank'>Check FishWatcher</a></span> | <span class='slabel1'><a href='https://cat.cisti.nrc.ca/search/Y?SEARCH=Gadus+morhua' target='_blank'>CISTI</a></span> | <a href='http://researcharchive.calacademy.org/research/ichthyology/catalog/fishcatmain.asp' target='_blank'>Catalog of Fishes </a>(<A href='http://researcharchive.calacademy.org/research/ichthyology/catalog/fishcatget.asp?genid=113' target='_blank'>gen.</A>, <A href='http://researcharchive.calacademy.org/research/ichthyology/catalog/fishcatget.asp?spid=12302' target='_blank'>sp.</A>) | <span class='slabel1'><a href='http://www.discoverlife.org/20/q?search=Gadus+morhua&b=FB69' target='_blank'>DiscoverLife</a></span> | <a href="//doris.ffessm.fr/fiche2.asp?fiche_numero=867" target="_blank">DORIS</a> | <span class='slabel1'><a href='#' onClick='javascript:document.forms.fn_ecotox.submit()' target='_blank'>ECOTOX</a></span> | <span class='slabel1'><a href='http://www.poissons-afrique.ird.fr/faunafri/index.svg?agg=idst&idfb=69' target='_blank'>Faunafri</a></span> | <span class='slabel1'>Fishtrace</span> |  GenBank(<span class='slabel1'><a href='https://www.ncbi.nlm.nih.gov/genome/?term=Gadus+morhua%5Borgn%5D&report=docsum' target='_blank'>genome</a></span>, <span class='slabel1'><a href='https://www.ncbi.nlm.nih.gov/nuccore/?term=Gadus+morhua%5Borgn%5D&report=docsum' target='_blank'>nucleotide</a></span>) | <a href='http://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=FBC%3AFB%3ASpecCode%3A69' target='_blank'>GloBI</a> | <span class='slabel1'><a href='https://books.google.com/books?ie=UTF-8&q=%22Gadus+morhua%22 OR %22Atlantic+cod%22&btnG=Search' target='_blank'>Google Books</a></span> | <span class='slabel1'><a href='https://scholar.google.com/scholar?q=%22Gadus+morhua%22 OR %22Atlantic+cod%22&ie=UTF-8&oe=UTF-8&hl=en&btnG=Search' target='_blank'>Google Scholar</a></span> | <span class='slabel1'><a href='https://www.google.com/search?q=%22Gadus+morhua%22+%22Atlantic+cod%22&time=7&x=44&y=7' target='_blank'>Google</a></span> | <a href="https://igfa.org/Records/Fish-Records.aspx?Fish=Cod, Atlantic&LC=ATR">IGFA World Record</a> | <span class='slabel1'><a href='http://mitofish.aori.u-tokyo.ac.jp/species/result.html?q=Gadus+morhua' target='_blank'>MitoFish</a></span> | <span class='slabel1'><a href='../Topic/NatDBaseList.php?ID=69&fbGenus=Gadus&fbSpecies=morhua&LDB=' target='_blank'>National databases</a></span> | OsteoBase(<a href='http://osteobase.mnhn.fr/region.php?lang=en&idStructure=2&idTaxon=65' target='_blank'>skull</a>, <a href='http://osteobase.mnhn.fr/region.php?lang=en&idStructure=11&idTaxon=65' target='_blank'>spine</a>)  | <a href='http://oto.biodiv.tw/eng/showmulti.php?sc=Gadus+morhua' target='_blank'>Otolith Atlas of Taiwan Fishes</a> | <span class='slabel1'><a href='../report/ShowAquariumList.php?speccode=69' target='_blank'>Public aquariums</a></span> | <span class='slabel1'><a href='https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&DB=pubmed&term=Gadus+morhua' target='_blank'>PubMed</a></span> | Reef Life Survey | <span class='slabel1'><a href='http://www.cfsan.fda.gov/~frf/rfe0ac.html' target='_blank'>RFE Identification</a></span> | <span class='slabel1'><a href='http://tolweb.org/tree?group=' target='_blank'>Tree of Life</a></span> | Wikipedia(<span class='slabel1'><a href='https://en.wikipedia.org/wiki/Special:Search?search=Gadus+morhua&go=Go' target='_blank'>Go</a></span>, <span class='slabel1'><a href='https://en.wikipedia.org/wiki/Special:Search?search=Gadus+morhua&fulltext=Search' target='_blank'>Search</a></span>) | World Records Freshwater Fishing | <span class='slabel1'><a href='http://www.zoobank.org/Search?search_term=Gadus+morhua' target='_blank'>Zoobank</a></span> | <span class='slabel1'><a href='http://www.organismnames.com/query.htm?q=Gadus+morhua&Submit.x=20&Submit.y=7&searchType=simple&so=a0' target='_blank'>Zoological Record</a></span>				</span>
+				</div>
+			</p>
+			<!-- Estimation -->
+			<p>
+				<h1 class='slabel bottomBorder'>
+					Estimates of some properties based on models				</h1>
+
+				<div class="smallSpace">
+				<!--Begin Mod 08/09/17 Shelumiel Ortiz-->
+				Preferred temperature (Ref. <a href='../references/FBRefSummary.php?ID=115969' target='_blank'>115969</a>): 0.5 - 10.3, mean 6.6 (based on 769 cells).				
+				<!--End Mod 08/09/17 Shelumiel Ortiz--> 				
+				<!-- Start Phylogentic (added by Stacy 120909)-->
+					<div class="smallSpace">
+					Phylogenetic diversity index  (Ref. <a href='../references/FBRefSummary.php?ID=82805' target='_blank'>82805</a>):&nbsp;&nbsp;PD<sub>50</sub> = 0.6250&nbsp;&nbsp; [Uniqueness, from 0.5 = low to 2.0 = high].					</div>
+					
+                <!-- Start Beyesian length-weight -->
+                    					<div class="smallSpace">
+													Bayesian length-weight: a=0.00708 (0.00629 - 0.00796), b=3.07 (3.03 - 3.11), in cm Total Length, based on LWR estimates for this species (Ref. <A href='../references/FBRefSummary.php?ID=93245'>93245</A>).						
+					</div>
+                    				<!-- Start Trophic Level -->
+					<div class="smallSpace">
+					Trophic Level  (Ref. <a 	href='../manual/English/fishbasetrophic_ecology00002692.htm'>69278</a>):&nbsp;&nbsp;4.1 &nbsp; &plusmn;0.2 se; Based on diet studies.					</div>
+				<!-- Start resilience-->
+					<div class="smallSpace">
+					Resilience  (Ref. <a href='https://www.fishbase.us/manual/English/key%20facts.htm#resilience'>69278</a>):&nbsp;&nbsp;Medium, minimum population doubling time 1.4 - 4.4 years (rm=0.2-1.1; also (Ref. <a href='../references/FBRefSummary.php?ID=36717'>36717</a>)).					</div>
+				<!-- Start Prior r -->
+					<div class="smallSpace">
+						 Prior r = 0.52, 95% CL = 0.34 - 0.78, Based on 48 stock assessments.					</div>
+				<!-- Start vulnerability-->
+					<div class="smallSpace">
+					Vulnerability  (Ref. <A href='../references/FBRefSummary.php?ID=59153'>59153</A>):&nbsp;&nbsp;High to very high vulnerability (65 of 100) .					</div>
+				<!-- Start price-->
+										<span id="pricecateg" >
+					<div class="smallSpace">
+											Price category  (Ref. <A href='../references/FBRefSummary.php?ID=80766'>80766</A>):&nbsp;&nbsp;						<a href="#price" onclick="getDetails('../includes/ajax/price.js.php?id=69', 'pricecateg');return false;">Medium</a>.
+					
+										</span>
+						</div>
+					</div>
+
+
+
+									<!-- END of price -->
+			</p>
+		</div> <!-- Main Content -->
+
+		<!-- Footer -->
+		<div id="ss-footer">
+			<div id="ss-collab">
+				<div class='ss-fiftypercent'>
+				Entered by <a href="/collaborators/CollaboratorSummary.php?id=2">Luna, Susan M.</a>				</div>
+				<div>
+				Modified by <a href="/collaborators/CollaboratorSummary.php?id=10">Torres, Armi G.</a>				</div>
+			</div>
+			<div class='ss-moreinfo'>
+				<fb:like href="https://www.fishbase.us/summary/Gadus-morhua.html" send="true" layout="button_count" width="400" show_faces="true" ref="bottom_sspage"></fb:like>
+			</div>
+			<div class='ss-div15'>
+				<a href='https://www.fishbase.us/FBForum/index.php?ID=69'>Fish Forum</a>			</div>
+			<div class='ss-div25'>
+			<!--Begin Mod 06/27/17 Shelumiel Ortiz-->
+						<form name="mailx_$i" method='post' action='https://fishbase.us/mail/MailForm.php'>
+						<input type="hidden" name="code" value="5">
+			<input type="hidden" name="pagefrom" value='http://fishbase.in/summary/69'>
+			<a href="javascript:document.mailx_$i.submit()">Comments & Corrections</a>
+			</form>
+			<!--End Mod 06/27/17 Shelumiel Ortiz-->
+			</div>
+			<div class='ss-moreinfo'>
+				<a href="https://www.fishbase.us/FBGuestBook/index.php">Sign our Guest Book</a>			</div>
+			<!--- Random Species --->
+			<div class='ss-clearboth'>
+				<div class='ss-div25'>
+				<a href="/search.php">Back to Search</a>				</div>
+
+				<div class='ss-div25'>
+				<a href='/summary/RandomSpecies.php'>Random Species</a>				</div>
+
+				<div class='ss-moreinfo'>
+				<a href="#">Back to Top</a>				</div>
+			</div>
+			<div class="sleft slabel7 ss-clearboth" style="display:none">
+				<BR />Accessed through: <b>69</b><div class='sleft'>
+								<span class='sleft slabel7'>FishBase mirror site : <strong>localhost</strong></span>
+							</div>Page last modified by : <a href="/collaborators/CollaboratorSummary.php?id=321">mrius-barile</a> - 20 July 2016<FORM name='fn_ecotox' target='_blank' action='https://cfpub.epa.gov/ecotox/quick_query.htm' method='post' style='visibility : hidden;'>
+		<input type='hidden'name='rbSpecSearchKing' value='ANIMAL'>
+		<input type='hidden' name='txAdvancedSpecEntries' value=' '>
+		<input type='hidden' name='rbSpecSearchGroup' value='SCIENTIFICNAME'>
+		<input type='hidden' name='rbSpecSearchType' value='CONTAINS'>
+		</FORM>
+	<form name='mailx' method='post' action='https://www.fishbase.us/mail/MailForm.php'>
+		<input type='hidden' name='code' value='1'>
+		<input type='hidden' name='pagefrom' value='http://fishbase.in/summary/69'>
+	</form>
+	<span class='slabel7' >Total processing time for the page : 0.0561 seconds</span>			</div>
+		</div>
+	</div> <!--- close ss-container -->
+
+
+	</body>
+</html>

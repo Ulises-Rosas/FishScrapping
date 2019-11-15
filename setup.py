@@ -16,6 +16,11 @@ setup(name="FishScrapping",
       packages = ['FishScrapping'],
       package_dir = {'FishScrapping': 'src'},
       scripts = ['src/fishbase.py'],
+      entry_points={
+        'console_scripts': [
+            'fishbase = FishScrapping.fishbase:main'
+            ]
+      },
       classifiers = [
              'Programming Language :: Python :: 3',
              'License :: OSI Approved :: MIT License'

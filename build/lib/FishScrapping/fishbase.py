@@ -350,11 +350,10 @@ class Fishbase:
                 g+="{0}\t{1}\t{2}\t{3}\t{4}\t{5}".format(self.species, a[-1], b[-1], n[-1], country[-1], length[-1])
                 return g
 
-    def keyFacts(self):
+    def keyfacts(self):
         ## delete this
         # self = Fishbase("Gadus morhua")
         ## delte this
-        
 
         nout = 5
         wid  = self._get_id()
@@ -363,18 +362,18 @@ class Fishbase:
             wid = self._get_id()
 
         if wid != self.consider_review:
+            
             complete_url = self.keyfacts + wid
 
             page = ""
+
             while page == "":
 
                 try:
                     page = urllib.request.urlopen(complete_url).read().decode('utf-8').replace("\n", "")
-                    # TODO: test species without keyfact avilability too
-                    if re.findall(self.too_many_connections, page):
-                        time.sleep(0.5)
-                        pass
-                except urllib.error.HTTPError:
+                    tough_connection = re.findall(self.too_many_connections, page)
+
+                except urllib.error.HTTPError or len(tough_connection) == 1:
                     time.sleep(0.5)
                     pass
                 
